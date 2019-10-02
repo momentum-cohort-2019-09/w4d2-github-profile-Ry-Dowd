@@ -1,0 +1,9 @@
+{
+  "lists":[
+    {"name":"active"},
+    {"name":"inactive"}
+  ],
+  "options":{
+
+  }
+}
