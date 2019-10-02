@@ -33,6 +33,14 @@ function spinTheWheel() {
     }
     function populateLists() {
         // Make a GET call to our api, and generate html for our active and inactive lists.
+        
+    }
+    function generateList(options){
+        // Map the contents of our options objects into the html for a list, which we will then join with newlines.
+        return options.map(option => {
+            `<li class="active" data-id=${option.id}>${option.name}</li>`
+        }).join("\n")
+
     }
     function deleteElement(node) {
         // When an element in the inactive options is right-clicked, send a DELETE.
@@ -48,7 +56,7 @@ function spinTheWheel() {
         let choice = Math.floor(Math.random() * array.length)
         if (choice !== prevIndex) {
             prevIndex = choice
-            resultDiv.innerHTML = `<h3>I think you should ${options[choice]}!</h3>`
+            resultDiv.innerHTML = `<h3>I think you should ${options[choice].textContent}!</h3>`
         } else {
             choose(array, prevIndex, resultDiv)
         }
