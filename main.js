@@ -11,10 +11,11 @@ document.querySelector(".content").addEventListener('click',function(event){
         toggleHide(event.target)
     }
 })
-
+let prevIndex = undefined
 function spinTheWheel(){
-// Look at our list of 'active options'. call a random number based on the length of the list and choose a random index from the list. hold onto that index so that the same option isn't randomly selected twice in a row
-    
+    // Look at our list of 'active options'. call a random number based on the length of the list and choose a random index from the list. hold onto that index so that the same option isn't randomly selected twice in a row. Then, update our result div according to the result.
+    let resultDiv = document.querySelector(".result")
+
 }
 function moveToActive(){
 // When an element in the inactive options is clicked on (event listener), patch it in the api so that it belongs to the other list, then repopulate our lists.
