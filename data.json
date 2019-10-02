@@ -1,9 +1,15 @@
 {
-  "lists":[
-    {"name":"active"},
-    {"name":"inactive"}
+  "lists": [
+    {
+      "name": "active",
+      "id": "a61f0c6d-28ed-434b-ac0a-d56b9015ed10"
+    },
+    {
+      "name": "inactive",
+      "id": "29098523-9a8f-4c2f-b405-9197b2e57f32"
+    }
   ],
-  "options":{
-
-  }
+  "options": [
+    
+  ]
 }
