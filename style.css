@@ -17,6 +17,25 @@ button{
     text-decoration:none;
     outline:none;
 }
+input{
+    padding: .5rem 1rem;
+    width: 300px;
+    font-size:1.2rem;
+    text-align:center;
+}
+.form-holder{
+    margin-bottom:2rem;
+}
+.pusher{
+    padding:1rem 2rem 12px;
+    background:blueviolet;
+    border-radius:3px;
+    display:inline-block;
+    margin-left:1rem;
+}
+.pusher:active{
+    background:rgb(97, 29, 160);
+}
 .result{
     margin:1rem auto 3rem;
 }
